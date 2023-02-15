@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/w-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-Wave Radio</title>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container header-container">
+        <div class="header__before header-before">
+          <a href="#" aria-label="Логотип W-Wave Radio" class="header-before__logo">
+            <img src="img/header-logo_1920.svg" class="header-before__img" alt="Логотип W-Wave Radio">
+          </a>
+          <button class="header-before__btn-enter btn-enter btn-reset">
+            <span class="btn-enter__text">Вход</span>
+          </button>
+        </div>
+        <div class="header__block1">
+          <a href="#" aria-label="Логотип W-Wave Radio" class="header__top-logo">
+            <img src="img/header-logo_1920.svg" alt="Логотип W-Wave Radio" class="header__logo-img">
+          </a>
+          <div class="header__nav">
+            <button aria-label="Открыть меню навигации" class="header__burger burger btn-reset">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+            <nav class="header__top-nav top-nav">
+              <button aria-label="Закрыть меню навигации" class="top-nav__close btn-reset"></button>
+              <ul class="top-nav__list list-reset">
+                <li class="top-nav__item">
+                  <a href="#podcasts" class="top-nav__link">Подкасты</a>
+                </li>
+                <li class="top-nav__item">
+                  <a href="#broadcast" class="top-nav__link">Передачи</a>
+                </li>
+                <li class="top-nav__item">
+                  <a href="#guests" class="top-nav__link">Гости</a>
+                </li>
+                <li class="top-nav__item">
+                  <a href="#playlists" class="top-nav__link">Плейлисты</a>
+                </li>
+                <li class="top-nav__item">
+                  <a href="#about" class="top-nav__link">О нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__top-btns">
+            <button aria-label="Окрыть форму поиска" class="header__top-btn-search top-btn-search btn-reset">
+              <svg class="top-btn-search__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="top-btn-search__path" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="top-btn-search__path" d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="header__top-form top-form">
+              <form action="#">
+                <div class="top-form__block">
+                  <input aria-label="поле ввода поиска" class="top-form__input" type="search" placeholder="Поиск по сайту">
+                  <button aria-label="Поиск" class="top-form__btn btn-reset"></button>
+                </div>
+              </form>
+            </div>
+            <div class="header__overlay overlay"></div>
+            <button class="header__btn-enter btn-enter btn-reset">
+              <span class="btn-enter__text">Вход</span>
+            </button>
+            <div class="header__form-enter form-enter">
+              <form id="form" action="https://jsonplaceholder.typicode.com/posts" class="header__form header-form" method="POST" enctype="multipart/form-data">
+                <h2 class="form-enter__title title">Вход</h2>
+                <p class="form-enter__text">Если у&nbsp;вас ещё нет аккаунта, <a href="#" class="form-enter__link" target="_blank">зарегистрируйтесь</a></p>
+                <div class="form-enter__form-group">
+                  <input class="form-enter__form-control item" type="text" data-validate-field="name" name="name" placeholder="Логин" required>
+                </div>
+                <div class="form-enter__form-group">
+                  <input class="form-enter__form-control item" type="password" data-validate-field="password" name="password" placeholder="Пароль" required>
+                </div>
+                <div class="form-enter__form-group">
+                  <button class="form-enter__btn enter-btn btn-reset" type="submit">
+                    Войти
+                  </button>
+                </div>
+              </form>
+            <div class="header__top-line"></div>
+            <div class="header__top-social top-social">
+              <p class="top-social__text">Войти с&nbsp;помощью:</p>
+              <div class="top-social__network social-network">
+                <a href="#" aria-label="Ссылка на Facebook" class="top-social__fb"></a>
+                <a href="#" aria-label="Ссылка на VKontakt" class="top-social__vk"></a>
+                <a href="#" aria-label="Ссылка на Google" class="top-social__google"></a>
+              </div>
+            </div>
+            <button aria-label="Закрыть форму" class="form-enter__enter-close enter-close btn-reset"></button>
+            </div>
+          </div>
+        </div>
+        <nav class="header__bottom-nav bottom-nav">
+          <ul class="bottom-nav__list list-bottom list-reset">
+            <li class="bottom-nav__item item-bottom">
+              <a href="#hero" class="bottom-nav__link link-bottom">Новости</a>
+            </li>
+            <li class="bottom-nav__item item-bottom">
+              <a href="#about__swiper-block" class="bottom-nav__link link-bottom">Блоги</a>
+            </li>
+            <li class="bottom-nav__item item-bottom">
+              <a href="#dropdown" class="bottom-nav__link link-bottom">Топы</a>
+            </li>
+            <li class="bottom-nav__item item-bottom">
+              <a href="#form" class="bottom-nav__link link-bottom">Опросы</a>
+            </li>
+            <li class="bottom-nav__item item-bottom">
+              <a href="#" class="bottom-nav__link link-bottom">Рейтинг</a>
+            </li>
+            <li class="bottom-nav__item item-bottom">
+              <a href="#adv-descr" class="bottom-nav__link link-bottom">Реклама</a>
+            </li>
+          </ul>
+          <div class="header__bottom-play-list play-list">
+            <div class="header__bottom-play-item play-item">
+              <div class="play-item__btns btns">
+                <button aria-label="Воспроизвести" class="play-item__play play btn-reset">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24531_5430)">
+                    <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                    </g>
+                    <defs>
+                    <rect width="24" height="24" fill="white"/>
+                    </defs>
+                    </svg>
+                </button>
+                <button aria-label="Пауза" class="play-item__pause pause hidden btn-reset">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24531_3491)">
+                    <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+                    <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+                    <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+                    </g>
+                    <defs>
+                    <rect width="24" height="24" fill="white"/>
+                    </defs>
+                    </svg>
+                </button>
+              </div>
+              <div class="play-item__text">
+                <span class="play-item__top">Ранее в эфире</span>
+                <span class="play-item__bottom">«Музыка»</span>
+              </div>
+            </div>
+            <div class="header__bottom-play-item play-item play-item2">
+              <div class="play-item__btns btns">
+                <button aria-label="Воспроизвести" class="play-item__play play btn-reset">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24531_5430)">
+                    <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                    </g>
+                    <defs>
+                    <rect width="24" height="24" fill="white"/>
+                    </defs>
+                    </svg>
+                </button>
+                <button aria-label="Пауза" class="play-item__pause pause hidden btn-reset">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24531_3491)">
+                    <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+                    <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+                    <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+                    </g>
+                    <defs>
+                    <rect width="24" height="24" fill="white"/>
+                    </defs>
+                    </svg>
+                </button>
+              </div>
+              <div class="play-item__text">
+                <span class="play-item__top">Сейчас в эфире</span>
+                <span class="play-item__bottom">«Как так?»</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom-age age"></div>
+        </nav>
+      </div>
+    <button aria-label="Закрыть форму" class="header__esc btn-reset">
+      <span class="header__esc-icon"></span>
+      <span class="header__esc-text">Что в эфире?</span>
+    </button>
+    <div class="header__plays">
+      <div class="header__bottom-play-item play-item">
+        <div class="play-item__btns btns">
+          <button aria-label="Воспроизвести" class="play-item__play play btn-reset">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_5430)">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+              </g>
+              <defs>
+              <rect width="24" height="24" fill="white"/>
+              </defs>
+            </svg>
+          </button>
+          <button aria-label="Пауза" class="play-item__pause pause hidden btn-reset">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_3491)">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+              <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+              <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+              </g>
+              <defs>
+              <rect width="24" height="24" fill="white"/>
+              </defs>
+              </svg>
+          </button>
+        </div>
+        <div class="play-item__text">
+          <span class="play-item__top">Ранее в эфире</span>
+          <span class="play-item__bottom">«Музыка»</span>
+        </div>
+      </div>
+      <div class="header__bottom-play-item play-item play-item2">
+        <div class="play-item__btns btns">
+          <button class="play-item__play play btn-reset">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_5430)">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+              </g>
+              <defs>
+              <rect width="24" height="24" fill="white"/>
+              </defs>
+              </svg>
+          </button>
+          <button class="play-item__pause pause hidden btn-reset">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24531_3491)">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+              <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+              <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+              </g>
+              <defs>
+              <rect width="24" height="24" fill="white"/>
+              </defs>
+              </svg>
+          </button>
+        </div>
+        <div class="play-item__text">
+          <span class="play-item__top">Сейчас в эфире</span>
+          <span class="play-item__bottom">«Как так?»</span>
+        </div>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__container">
+          <div class="hero__content content">
+            <h1 class="hero__title title"><span class="title__span">Радио</span> W-Wawe</h1>
+            <p class="hero__text text">
+              Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+            </p>
+            <a href="#" class="hero__link link" target="_blank">Слушать эфир</a>
+          </div>
+          <div class="hero__img"></div>
+        </div>
+      </section>
+      <section id="podcasts" class="podcasts">
+        <div class="container podcasts__container">
+          <h2 class="podcasts__title title">Подкасты</h2>
+          <ul class="podcasts__list list-reset">
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-one">
+                <span class="podcast__date">14 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">15:43</span>
+                    <h3 class="top__subtitle">Европа. XIX век</h3>
+                    <span class="top__name">Дмитрий Гутенберг</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">258</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">104</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">68</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-two">
+                <span class="podcast__date">11 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">5:32</span>
+                    <h3 class="top__subtitle">О музыке</h3>
+                    <span class="top__name">Дмитрий Гутенберг</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">207</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">34</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">18</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-three">
+                <span class="podcast__date">8 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">8:54</span>
+                    <h3 class="top__subtitle">Люди сегодня</h3>
+                    <span class="top__name">Анна Васильева</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">104</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">54</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">42</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-four">
+                <span class="podcast__date">5 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">9:04</span>
+                    <h3 class="top__subtitle">Хэллоу, Африка!</h3>
+                    <span class="top__name">Пётр Дмитриевский</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">87</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">44</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">5</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-five">
+                <span class="podcast__date">2 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">7:03</span>
+                    <h3 class="top__subtitle">Обо всём</h3>
+                    <span class="top__name">Пётр Дмитриевский</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">64</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">30</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">8</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-six">
+                <span class="podcast__date">28 мая</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">9:15</span>
+                    <h3 class="top__subtitle">Физика цвета</h3>
+                    <span class="top__name">Татьяна Флеганова</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">58</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">29</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">14</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-seven">
+                <span class="podcast__date">22 мая</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">16:04</span>
+                    <h3 class="top__subtitle">Источник звука</h3>
+                    <span class="top__name">Пётр Дмитриевский</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">55</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">20</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">12</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-eight">
+                <span class="podcast__date">18 мая</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">6:55</span>
+                    <h3 class="top__subtitle">Правила этикета</h3>
+                    <span class="top__name">Татьяна Флеганова</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">24</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">54</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">42</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-one">
+                <span class="podcast__date">14 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">15:43</span>
+                    <h3 class="top__subtitle">Европа. XIX век</h3>
+                    <span class="top__name">Дмитрий Гутенберг</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">258</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">104</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">68</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-two">
+                <span class="podcast__date">11 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">5:32</span>
+                    <h3 class="top__subtitle">О музыке</h3>
+                    <span class="top__name">Дмитрий Гутенберг</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">207</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">34</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">18</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-three">
+                <span class="podcast__date">8 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">8:54</span>
+                    <h3 class="top__subtitle">Люди сегодня</h3>
+                    <span class="top__name">Анна Васильева</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">104</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">54</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">42</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="podcasts__item podcast">
+              <div class="podcast__img podcast__img-four">
+                <span class="podcast__date">5 июня</span>
+              </div>
+              <div class="podcast__descr descr">
+                <div class="descr__top top">
+                  <div class="top__text">
+                    <span class="top__time">9:04</span>
+                    <h3 class="top__subtitle">Хэллоу, Африка!</h3>
+                    <span class="top__name">Пётр Дмитриевский</span>
+                  </div>
+                  <div class="top__btns btns">
+                    <button aria-label="Воспроизвести подкаст" class="top__btn-play btn-reset"></button>
+                    <button aria-label="Пауза" class="top__btn-pause hidden btn-reset"></button>
+                  </div>
+                </div>
+                <div class="descr__bottom bottom">
+                  <div class="bottom__play">
+                    <span class="visually-hidden">Количество прослушанных подкастов</span>
+                    <span class="bottom__img bottom__img_play"></span>
+                    <span class="bottom__number">87</span>
+                  </div>
+                  <button aria-label="Лайк" class="bottom__like btn-reset">
+                    <span class="bottom__img bottom__img_like"></span>
+                    <span class="bottom__number">44</span>
+                  </button>
+                  <button aria-label="Поделиться" class="bottom__share btn-reset">
+                    <span class="bottom__img bottom__img_share"></span>
+                    <span class="bottom__number">5</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="podcasts__btn-center btn-center">
+            <button class="btn-center__link link">Ещё подкасты</button>
+          </div>
+        </div>
+      </section>
+      <section id="broadcast" class="broadcast">
+        <div class="container broadcast__container">
+          <div class="broadcast__block1 brc-block1">
+            <h3 class="brc-block1__title title">Передачи</h3>
+            <span class="brc-block1__subtitle">Автор:</span>
+            <div id="dropdown" class="brc-block1__dropdown dropdown">
+              <button aria-label="Выбор автора" class="dropdown__button">Дмитрий Гутенберг</button>
+              <ul class="dropdown__list list-reset">
+                <li tabindex="0" class="dropdown__list-item" data-value="one">Дмитрий Гутенберг</li>
+                <li tabindex="0" class="dropdown__list-item" data-value="two">Татьяна Флеганова</li>
+                <li tabindex="0" class="dropdown__list-item" data-value="three">Анна Васильева</li>
+                <li tabindex="0" class="dropdown__list-item" data-value="four">Пётр Дмитриевский</li>
+              </ul>
+              <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+            </div>
+          </div>
+          <div class="broadcast__block2 brc-block2">
+            <div class="brc-block2__img"></div>
+            <div class="brc-block2__descr">
+              <a href="#" class="brc-block2__link link">Архив</a>
+              <p class="brc-block2__text">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
+            </div>
+          </div>
+          <ul id="brc-block3" class="broadcast__block3 brc-block3 list-reset">
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img1"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">О людях и книгах</h4>
+                  <p class="item-descr__text">Анонсируется отдельно</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img2"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">Графомания td</h4>
+                  <p class="item-descr__text">По понедельникам в 10:00</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img3"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">Не Рим, не Троя</h4>
+                  <p class="item-descr__text">По вторникам в 12:00</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img4"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">Эрудит</h4>
+                  <p class="item-descr__text">По пятницам в 17:00</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img5"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">Тонкости эпох</h4>
+                  <p class="item-descr__text">По субботам в 10:00</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+            <li class="brc-block3__item block3-item">
+              <a href="#" class="brc-block3__link">
+                <div class="block3-item__img item-img6"></div>
+                <div class="block3-item__descr item-descr">
+                  <h4 class="item-descr__title title">Живые мысли</h4>
+                  <p class="item-descr__text">По воскресеньям в 15:30</p>
+                  <span class="item-descr__link"><i>Подробнее</i></span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="guests" class="guests">
+        <div class="container guests__container">
+          <h2 class="guests__title title">Гости</h2>
+          <span class="guests__span">У&nbsp;нас бывают:</span>
+          <p class="guests__text">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
+          <div class="guests__block gs-block">
+            <div class="gs-block__accordion block-acc">
+              <ul class="block-acc__list accordion-list list-reset">
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Блогеры</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list">
+                      <button class="acc-content__btn btn-reset" data-path="Сергей Денисов">Сергей Денисов</button>
+                      <button class="acc-content__btn btn-reset" data-path="Евгений Войновский">Евгений Войновский</button>
+                      <button class="acc-content__btn btn-reset" data-path="Олег Свиридовский">Олег Свиридовский</button>
+                      <button class="acc-content__btn btn-reset" data-path="Денис Тельман">Денис Тельман</button>
+                      <button class="acc-content__btn btn-reset" data-path="Матвей Мечников">Матвей Мечников</button>
+                      <button class="acc-content__btn acc-content__btn--active btn-reset" data-path="Ольга Мартынова">Ольга Мартынова</button>
+                      <button class="acc-content__btn btn-reset" data-path="Владислав Кауперс">Владислав Кауперс</button>
+                      <button class="acc-content__btn btn-reset" data-path="Юрий Горин">Юрий Горин</button>
+                      <button class="acc-content__btn btn-reset" data-path="Константин Прусино">Константин Прусино</button>
+                      <button class="acc-content__btn btn-reset" data-path="Дмитрий Михалок">Дмитрий Михалок</button>
+                      <button class="acc-content__btn btn-reset" data-path="Михаил Пожитников">Михаил Пожитников</button>
+                      <button class="acc-content__btn btn-reset" data-path="Максим Сергеев">Максим Сергеев</button>
+                      <button class="acc-content__btn btn-reset" data-path="Иван Калитников">Иван Калитников</button>
+                      <button class="acc-content__btn btn-reset" data-path="Пётр Пиотровский">Пётр Пиотровский</button>
+                      <button class="acc-content__btn btn-reset" data-path="Георгий Полуян">Георгий Полуян</button>
+                      <button class="acc-content__btn acc-content__btn_zero btn-reset"></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Арт-критики</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list"></div>
+                  </div>
+                </li>
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Художники</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list"></div>
+                  </div>
+                </li>
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Люди науки</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list"></div>
+                  </div>
+                </li>
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Историки</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list"></div>
+                  </div>
+                </li>
+                <li class="block-acc__item accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false">
+                    <span class="accordion__title">Филологи</span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content acc-content" aria-hidden="true">
+                    <div class="acc-content__list"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Сергей Денисов">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Сергей Денисов</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad distinctio debitis culpa eum, eos accusamus assumenda ducimus fugiat optio ea eligendi praesentium unde harum aut sapiente dicta incidunt ipsa!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Матвей Мечников">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Матвей Мечников</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ut eveniet hic molestiae delectus distinctio in veritatis laborum, voluptatibus vitae quis iure recusandae, ratione commodi cumque praesentium quidem et accusamus.</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Константин Прусино">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Константин Прусино</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur repellat hic molestias obcaecati eos dolorem quasi provident ex nisi ad saepe atque maxime fugit corporis vel, beatae nobis temporibus similique!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Иван Калитников">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Иван Калитников</h3>
+                <p class="gs-cards__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, eligendi. Neque perferendis porro ratione commodi doloremque asperiores voluptatem quae laudantium unde, amet et quis ipsum ipsa fugiat nobis. Repellendus, hic.</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Евгений Войновский">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Евгений Войновский</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards gs-cards--active" data-target="Ольга Мартынова">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-cards-image1-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-cards-image1-1024.png">
+                  <img src="img/gs-cards-image1.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Ольга Мартынова</h3>
+                <p class="gs-cards__text">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Дмитрий Михалок">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Дмитрий Михалок</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Пётр Пиотровский">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Пётр Пиотровский</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Олег Свиридовский">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Олег Свиридовский</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Владислав Кауперс">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Владислав Кауперс</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Михаил Пожитников">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Михаил Пожитников</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Георгий Полуян">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Георгий Полуян</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Денис Тельман">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Денис Тельман</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Юрий Горин">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Юрий Горин</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+            <div class="guests__cards gs-cards" data-target="Максим Сергеев">
+              <div class="gs-cards__foto cards-foto">
+                <picture>
+                  <source media="(max-width: 440px)" srcset="img/gs-заглушка-320.png">
+                  <source media="(max-width: 1024px)" srcset="img/gs-заглушка-1024.png">
+                  <img src="img/gs-заглушка.png" alt="Фото гостя" class="cards-foto__img">
+                </picture>
+              </div>
+              <div class="gs-cards__descr cards-descr">
+                <div class="cards-descr__soc">
+                  <a href="#" class="cards-descr__inst" aria-label="Instagram"></a>
+                  <a href="#" class="cards-descr__fb" aria-label="Facebook"></a>
+                  <a href="#" class="cards-descr__twr" aria-label="Twitter"></a>
+                </div>
+                <h3 class="gs-cards__title title">Максим Сергеев</h3>
+                <p class="gs-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores nisi explicabo reiciendis, similique maxime earum a accusantium officiis atque soluta ad dolores, tempora cumque vel iste libero ipsum tempore!</p>
+                <a href="#" class="gs-cards__link link">Эфиры с гостем</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="playlists" class="playlists">
+        <div class="container playlists__container">
+          <div class="playlists__block1 pl-block1">
+            <h2 class="pl-block1__title title">Плейлисты</h2>
+            <span class="pl-block1__span">Жанр</span>
+            <div class="pl-block1__checkbox checkbox">
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Постпанк</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Хардкор</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Панк-рок</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Рок</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Прогрессивный рок</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Электронная музыка</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Классическая музыка</span>
+              </label>
+              <label class="checkbox__label check">
+                <input class="check__input box" type="checkbox" name="check">
+                <span class="check__box"></span>
+                <span class="check__text">Звуки природы и&nbsp;шум города</span>
+              </label>
+            </div>
+          </div>
+          <div class="playlists__block2 pl-block2">
+            <p class="pl-block2__text">
+              Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
+            </p>
+            <div class="pl-block2__author"><i><span>©</span> 2021 l W-Wave</i></div>
+            <div class="pl-block2__age"></div>
+          </div>
+          <div class="playlists__block3 pl-block3">
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-Ploho.png" alt="Ploho" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Ploho</h4>
+                <span class="pl-item__text">3&nbsp;последних альбома</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-MolchatDoma.png" alt="Molchat Doma" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Molchat Doma</h4>
+                <span class="pl-item__text">Все песни</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-Motorama.png" alt="Motorama" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Motorama</h4>
+                <span class="pl-item__text">Все синглы</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-HumanTetris.png" alt="HumanTetris" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Human Tetris</h4>
+                <span class="pl-item__text">3&nbsp;последних альбома</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-Buerak.png" alt="Буерак" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Буерак</h4>
+                <span class="pl-item__text">Все EP</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-JuleDays.png" alt="Июльские Дни" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Июльские Дни</h4>
+                <span class="pl-item__text">Альбом «Колокол»</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-JoyDivision.png" alt="JoyDivision" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Joy Division</h4>
+                <span class="pl-item__text">Лучшее за всё время</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-TheCure.png" alt="TheCure" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">The Cure</h4>
+                <span class="pl-item__text">Лучшее за всё время</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-TheSmiths.png" alt="TheSmiths" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">The Smiths</h4>
+                <span class="pl-item__text">Период 1984–1988</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-NewOrder.png" alt="New Order" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">New Order</h4>
+                <span class="pl-item__text">Хиты</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-Bauhaus.png" alt="Bauhaus" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Bauhaus</h4>
+                <span class="pl-item__text">Все синглы</span>
+              </div>
+            </div>
+            <div tabindex="0" role="button" class="pl-block3__item pl-item">
+              <div class="pl-item__img">
+                <img src="img/pl-GangOfFour.png" alt="Gang Of Four" class="pl-item__pic">
+              </div>
+              <div class="pl-item__descr">
+                <h4 class="pl-item__title title">Gang Of Four</h4>
+                <span class="pl-item__text">3&nbsp;последних альбома</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="adv">
+        <div class="container adv__container">
+          <div class="adv__img adv-img">
+            <picture>
+              <source media="(max-width: 320px)" srcset="img/adv-icon-320.png">
+              <source media="(max-width: 768px)" srcset="img/adv-icon-768.png">
+              <source media="(max-width: 1024px)" srcset="img/adv-icon-1024.png">
+              <img src="img/adv-icon.png" alt="new" class="adv-img__icon">
+            </picture>
+            <picture>
+              <source media="(max-width: 320px)" srcset="img/adv-img-320.png">
+              <source media="(max-width: 768px)" srcset="img/adv-img-768.png">
+              <source media="(max-width: 1024px)" srcset="img/adv-img-1024.png">
+              <img src="img/adv-img.png" alt="Рисунок товара" class="adv-img__img">
+            </picture>
+          </div>
+          <div id="adv-descr" class="adv__descr adv-descr">
+            <h2 class="adv-descr__title title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
+            <div class="adv-descr__decor"></div>
+            <p class="adv-descr__text1">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать:)</p>
+            <p class="adv-descr__text2">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех деталей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
+            <span class="adv-descr__price">2 800 ₽</span>
+            <a href="#" class="adv-descr__link link">
+              <span class="adv-descr__icon"></span>
+              <span class="adv-descr__text">Купить на&nbsp;Яндекс.Маркет</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container about__container">
+          <div class="about__descr about-descr">
+            <div class="about-descr__text descr-text">
+              <h2 class="descr-text__title title">О нас</h2>
+              <p class="descr-text__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
+              <p class="descr-text__text">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших передачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)</p>
+            </div>
+            <div class="about-descr__decor descr-decor">
+              <div class="descr-decor__one"></div>
+              <div class="descr-decor__two"></div>
+            </div>
+          </div>
+          <div id="about__swiper-block" class="about__swiper-block">
+            <button class="swiper-button-prev btn-reset"></button>
+            <button class="swiper-button-next btn-reset"></button>
+            <div class="about__swiper swiper">
+              <div class="about__swiper-wrapper swiper-wrapper">
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-dmitriy-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-dmitriy-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-dmitriy-1024.png">
+                      <img src="img/about-dmitriy.png" alt="Дмитрий Гутенберг" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Дмитрий Гутенберг</h3>
+                    <p class="swiper-slide__text">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-anna-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-anna-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-anna-1024.png">
+                      <img src="img/about-anna.png" alt="Анна Васильева" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Анна Васильева</h3>
+                    <p class="swiper-slide__text">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-petr-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-petr-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-petr-1024.png">
+                      <img src="img/about-petr.png" alt="Пётр Дмитриевский" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Пётр Дмитриевский</h3>
+                    <p class="swiper-slide__text">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-tatyana-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-tatyana-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-tatyana-1024.png">
+                      <img src="img/about-tatyana.png" alt="Татьяна Флеганова" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Татьяна Флеганова</h3>
+                    <p class="swiper-slide__text">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-fedor-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-fedor-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-fedor-1024.png">
+                      <img src="img/about-fedor.png" alt="Фёдор Прокопьев" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Фёдор Прокопьев</h3>
+                    <p class="swiper-slide__text">Привет! Я&nbsp;фотограф, музыкант, ведущий</p>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__slide swiper-slide">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/about-svetlana-320.png">
+                      <source media="(max-width: 768px)" srcset="img/about-svetlana-768.png">
+                      <source media="(max-width: 1024px)" srcset="img/about-svetlana-1024.png">
+                      <img src="img/about-svetlana.png" alt="Светлана Кортнева" class="swiper-slide__img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide__descr">
+                    <h3 class="swiper-slide__title title">Светлана Кортнева</h3>
+                    <p class="swiper-slide__text">Художник-оформитель. Оформляю</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="form1" action="https://jsonplaceholder.typicode.com/posts" class="about__form form" method="POST" enctype="multipart/form-data">
+            <label for="#" class="form__label form__label_textarea">
+              <textarea class= "textarea" name="comment" id="#" cols="30" rows="10" placeholder="Что скажете?" required></textarea>
+            </label>
+            <label class="form__label form__label_name">
+              <input class="input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Имя" required>
+            </label>
+            <label class="form__label form__label_mail">
+              <input class="input input-mail" type="email" data-validate-field="email" name="Email" placeholder="Email" required>
+            </label>
+            <button class="form__btn form-btn btn btn-reset">Отправить</button>
+            <label class="form__check form-check">
+              <input class="form-check__input" type="checkbox" required>
+              <span class="form-check__box"></span>
+              <span class="form-check__text">Согласен на&nbsp;обработку персональных данных</span>
+            </label>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__image">
+            <a href="#header" class="footer__link">
+              <img class="footer__logo" src="img/footer-logo.png" alt="Логотип компании">
+            </a>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__yt" aria-label="Youtube">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" fill="#D2D5DD"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__ok" aria-label="Odnoklassniki">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z" fill="#D2D5DD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z" fill="#D2D5DD"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__vk" aria-label="V Kontakte">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68652 2.68652 0 6 0H14C17.3135 0 20 2.68652 20 6V14C20 17.3135 17.3135 20 14 20H6C2.68652 20 0 17.3135 0 14V6ZM15.3438 11.4473C15.7139 11.7778 16.0845 12.1089 16.4121 12.4795C16.5415 12.626 16.6665 12.7754 16.7769 12.9346C16.835 13.0181 16.8892 13.104 16.938 13.1934C17.0425 13.3848 17.0439 13.5859 16.9727 13.7383C16.9058 13.8809 16.7754 13.981 16.606 13.9917L14.4209 13.9912C13.8569 14.0356 13.4077 13.8208 13.0293 13.4575C12.7271 13.1675 12.4468 12.8584 12.1558 12.5586C12.0366 12.4355 11.9116 12.3198 11.7622 12.2285C11.5962 12.1265 11.4419 12.0991 11.3086 12.1455C11.2031 12.1821 11.1104 12.2656 11.0352 12.3955C10.8613 12.6938 10.8213 13.0244 10.8047 13.3564C10.7812 13.8418 10.6255 13.9688 10.1089 13.9917C9.00439 14.0405 7.95654 13.8823 6.98242 13.3574C6.12305 12.8945 5.45801 12.2417 4.87842 11.502C3.75 10.0601 2.88574 8.47754 2.10938 6.84912C1.93457 6.48242 2.0625 6.28662 2.4917 6.27881C3.20459 6.26611 3.91797 6.26758 4.63086 6.27832C4.9209 6.28271 5.11279 6.43896 5.22461 6.69727C5.60986 7.59082 6.08203 8.44092 6.67432 9.229L6.78369 9.37207C6.90918 9.53174 7.04541 9.68262 7.22217 9.79688C7.4751 9.96045 7.66797 9.90625 7.7876 9.64014C7.86377 9.4707 7.89697 9.28955 7.91357 9.1084C7.97021 8.4873 7.97705 7.86621 7.87891 7.24756C7.81787 6.86035 7.58643 6.61035 7.17725 6.53711C6.96826 6.49951 6.99902 6.42676 7.10059 6.31445C7.27637 6.12061 7.44141 6.00049 7.771 6.00049L10.2397 6C10.6284 6.07178 10.7158 6.23633 10.7686 6.60596L10.771 9.19092C10.7661 9.33398 10.8472 9.75781 11.1191 9.85107C11.3374 9.91895 11.4814 9.75391 11.6118 9.62402C12.2036 9.03174 12.6255 8.33301 13.0034 7.60986C13.1699 7.29102 13.314 6.96094 13.4536 6.63037C13.5024 6.51562 13.5635 6.42822 13.6455 6.36816C13.7378 6.30029 13.8564 6.26758 14.0117 6.26953L16.3887 6.27246C16.4585 6.27246 16.5298 6.27295 16.5991 6.28418C16.8101 6.31836 16.9404 6.37939 16.9985 6.4834C17.0503 6.57666 17.0439 6.70508 16.9854 6.87939C16.7979 7.43555 16.4399 7.90283 16.0835 8.36768L16.041 8.42334C15.6436 8.94092 15.2202 9.43994 14.8271 9.95996C14.4658 10.4346 14.4941 10.6738 14.9429 11.0864C15.0752 11.208 15.2095 11.3276 15.3438 11.4473Z" fill="#D2D5DD"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__right footer-right">
+          <div class="footer-right__item">
+            <a href="#podcasts" class="footer-right__link">Подкасты</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#playlists" class="footer-right__link">Плейлисты</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#hero" class="footer-right__link">Новости</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#broadcast" class="footer-right__link">Передачи</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#brc-block3" class="footer-right__link">Сетка</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#about__swiper-block"  class="footer-right__link">Блоги</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#guests" class="footer-right__link">Гости</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#about" class="footer-right__link">О нас</a>
+          </div>
+          <div class="footer-right__item">
+            <a href="#dropdown" class="footer-right__link">Топы</a>
+          </div>
+        </nav>
+      </div>
+    <div class="footer__decor"></div>
+    <div class="footer__note">
+        <span class="footer__span">W-WAVE ® 2021</span>
+    </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
