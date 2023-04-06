@@ -167,43 +167,22 @@ accContentBtn.forEach(function(element){
 });
 
 
-let burger = document.querySelector('.burger');
-let menu = document.querySelector('.top-nav');
-let menuBottom = document.querySelector('.bottom-nav');
-let menuLinks = menu.querySelectorAll('.top-nav__link');
-let menuLinksBottom = menu.querySelectorAll('.link-bottom');
-let navClose = document.querySelector('.top-nav__close');
-
-burger.addEventListener('click', function(){
-  burger.classList.toggle('burger--active');
-  menu.classList.toggle('top-nav--active');
-  menuBottom.classList.toggle('bottom-nav--active');
-})
-
-navClose.addEventListener('click', function(){
-  burger.classList.remove('burger--active');
-  menu.classList.remove('top-nav--active');
-  menuBottom.classList.remove('bottom-nav--active');
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("burger").addEventListener("click", function() {
+      document.querySelector("header").classList.toggle("open")
+  })
 })
 
 
 let openBtn = document.querySelector('.header__esc');
 let menuPlays = document.querySelector('.header__plays');
-let menuContent = menu.querySelectorAll('.header__text');
-let closeBtn = document.querySelector('.header__esc--active');
-
 
 openBtn.addEventListener('click', function(){
     openBtn.classList.toggle('header__esc--active');
     menuPlays.classList.toggle('header__plays--active');
-    menuContent.classList.toggle('header__text--active');
 })
 
-closeBtn.addEventListener('click', function(){
-    openBtn.classList.remove('burger--active');
-    menuPlays.classList.remove('pheader__plays--active');
-    menuContent.classList.remove('header__text--active');
-  })
+
 
 
 

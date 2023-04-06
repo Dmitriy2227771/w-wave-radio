@@ -1,8 +1,19 @@
 console.log('Init!');
 
 new window.JustValidate('.form', {
+  rules: {
+    checkbox: {
+      required: true
+    },
+  },
   colorWrong: '#D52B1E',
+  focusWrongField: true,
   messages: {
+    text: {
+      required: 'Вы не ввели сообщение',
+      minLength: 'Введите 5 и более символов',
+      maxLength: 'Запрещено вводить более 300 символов'
+    },
     name: {
       required: 'Вы не ввели имя',
       minLength: 'Введите 3 и более символов',
@@ -31,3 +42,5 @@ new window.JustValidate('.header-form', {
     }
   }
 })
+
+
